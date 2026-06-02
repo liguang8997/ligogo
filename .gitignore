@@ -1,0 +1,40 @@
+# 前端依赖
+node_modules/
+
+# 环境变量
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 上传目录
+uploads/avatars/*
+uploads/attachments/*
+!uploads/avatars/.gitkeep
+!uploads/attachments/.gitkeep
+
+# 日志
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 测试
+.pytest_cache/
+.coverage
+htmlcov/
