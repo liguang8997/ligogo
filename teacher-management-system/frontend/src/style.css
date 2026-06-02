@@ -1,0 +1,63 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --primary: #8B4513;       /* 深木色 */
+  --primary-light: #CD853F; /* 浅木色 */
+  --accent: #B22222;        /* 朱红 */
+  --gold: #DAA520;          /* 金色 */
+  --bg: #FFF8F0;            /* 纸张米色背景 */
+  --bg-dark: #F5E6D3;      /* 深米色 */
+  --text: #3C2415;          /* 深棕文字 */
+  --text-light: #8B7355;    /* 浅棕文字 */
+  --border: #D2B48C;        /* 边框色 */
+  --success: #2E8B57;
+  --warning: #CD853F;
+  --danger: #B22222;
+  --info: #5F9EA0;
+}
+
+body {
+  font-family: 'STKaiti', 'KaiTi', '楷体', 'SimSun', '宋体', serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+/* Element Plus 主题覆盖 */
+.el-menu {
+  background: #3C2415 !important;
+  border-right: 2px solid var(--gold) !important;
+}
+.el-menu .el-menu-item {
+  color: #D2B48C !important;
+  font-family: 'STKaiti', 'KaiTi', '楷体', serif;
+  font-size: 16px;
+}
+.el-menu .el-menu-item:hover { background: #5C3A1E !important; color: var(--gold) !important; }
+.el-menu .el-menu-item.is-active { background: #5C3A1E !important; color: var(--gold) !important; border-right: 3px solid var(--gold); }
+
+.el-header {
+  background: linear-gradient(180deg, #3C2415 0%, #5C3A1E 100%) !important;
+  border-bottom: 2px solid var(--gold) !important;
+  color: var(--gold) !important;
+  font-family: 'STKaiti', 'KaiTi', '楷体', serif;
+  font-size: 22px;
+}
+
+.el-card { border: 1px solid var(--border); border-radius: 8px; background: #FFFCF5; }
+.el-button--primary { background: var(--primary); border-color: var(--primary); }
+.el-button--primary:hover { background: var(--primary-light); border-color: var(--primary-light); }
+.el-button--success { background: var(--success); border-color: var(--success); }
+.el-button--danger { background: var(--danger); border-color: var(--danger); }
+
+.el-table { --el-table-header-bg-color: #F5E6D3; }
+.el-pagination { justify-content: center; margin-top: 16px; }
+
+.page-container { padding: 20px; }
+.page-title { font-size: 22px; color: var(--primary); border-bottom: 2px solid var(--gold); padding-bottom: 8px; margin-bottom: 16px; }
+.toolbar { display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; align-items: center; }

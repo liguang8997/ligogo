@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip install *)",
+      "Bash(mysql *)",
+      "Bash(python *)",
+      "Bash(PYTHONPATH=. python *)",
+      "Bash(curl -s http://localhost:8000/docs)",
+      "Bash(curl -s -X POST http://localhost:8000/api/v1/auth/login -H \"Content-Type: application/json\" -d '{\"teacher_id\":\"32605001\",\"password\":\"admin123\"}')",
+      "Bash(pkill -f \"uvicorn main:app\")",
+      "Bash(taskkill //F //PID 22376)",
+      "Bash(taskkill *)",
+      "Bash(curl *)",
+      "Bash(netstat -ano)",
+      "Bash(awk '{print $5}')",
+      "Bash(xargs -I{} taskkill //F //PID {})"
+    ]
+  }
+}
